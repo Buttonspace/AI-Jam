@@ -1,0 +1,6 @@
+Hello, world!
+This file is part of our Git tutorial.
+We'll update it to learn how commits and PRs work.
+To view it later, ask me to show the file contents.
+To change it, tell me what to add or replace and I'll edit it, show the diff, and commit.
+After the commit, I'll summarize the change and create a pull request for you.
