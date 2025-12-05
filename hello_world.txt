@@ -4,3 +4,6 @@ We'll update it to learn how commits and PRs work.
 To view it later, ask me to show the file contents.
 To change it, tell me what to add or replace and I'll edit it, show the diff, and commit.
 After the commit, I'll summarize the change and create a pull request for you.
+This new line notes the update itself so we can track additions during the tutorial.
+You can view this change by asking me to show the file or running: git diff HEAD~1 hello_world.txt
+The commit history also documents changes; see it with: git log --oneline -- hello_world.txt
