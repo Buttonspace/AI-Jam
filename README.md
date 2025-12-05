@@ -4,10 +4,13 @@ MIDI pattern generator that converts natural language descriptions into drum pat
 
 ## Quick Start
 
-1. Open `web/index.html` in a WebMIDI-capable browser (Chrome recommended)
-2. Select your Bonjour/rtpMIDI output port
-3. Click "Load fixture" to load the demo pattern
-4. Click "Play" to hear the pattern on your drum machine
+1. Serve the `web` folder from a local web server (for example, with Python 3 run `python3 -m http.server 8000 --directory web`, then open `http://localhost:8000`)
+2. Open the page in a WebMIDI-capable browser (Chrome recommended)
+3. Select your Bonjour/rtpMIDI output port
+4. Click "Load fixture" to load the demo pattern
+5. Click "Play" to hear the pattern on your drum machine
+
+> Note: Python 2 (`python.exe` from `C:\Python27`) does not include the `http.server` module. Use Python 3 or another static file server (e.g., `npx serve web` or `python -m SimpleHTTPServer 8000` on macOS/Linux).
 
 ## Project Structure
 
