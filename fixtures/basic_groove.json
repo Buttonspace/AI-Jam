@@ -1,0 +1,25 @@
+{
+  "bpm": 120,
+  "time_signature": "4/4",
+  "length_bars": 1,
+  "voices": [
+    {
+      "name": "kick",
+      "midi_note": 36,
+      "channel": 10,
+      "steps": [1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0]
+    },
+    {
+      "name": "snare",
+      "midi_note": 38,
+      "channel": 10,
+      "steps": [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    },
+    {
+      "name": "hat_closed",
+      "midi_note": 42,
+      "channel": 10,
+      "steps": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    }
+  ]
+}

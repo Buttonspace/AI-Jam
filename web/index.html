@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-Jam MVP Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>AI-Jam MVP Player</h1>
+      <p>Load a 16-step JSON artifact, choose a MIDI port, and play it to your drum machine.</p>
+    </header>
+
+    <section class="controls">
+      <div class="control-group">
+        <label for="midi-output">MIDI Output</label>
+        <div class="inline">
+          <select id="midi-output"></select>
+          <button id="refresh-midi">Refresh</button>
+        </div>
+        <small>Use the Bonjour/rtpMIDI port that routes to the mio 4.</small>
+      </div>
+
+      <div class="control-group">
+        <label for="bpm">BPM</label>
+        <input id="bpm" type="number" min="20" max="300" value="120">
+      </div>
+
+      <div class="control-group">
+        <label>Channel</label>
+        <div class="channel-options">
+          <label><input type="radio" name="channel-mode" value="artifact" checked> Use artifact channels</label>
+          <label class="inline"><input type="radio" name="channel-mode" value="override"> Override:</label>
+          <input id="channel-override" type="number" min="1" max="16" value="10" disabled>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label for="json-input">Artifact JSON</label>
+        <textarea id="json-input" rows="12" spellcheck="false"></textarea>
+        <div class="inline">
+          <button id="load-json">Load JSON</button>
+          <button id="load-fixture">Load Fixture</button>
+        </div>
+      </div>
+
+      <div class="control-group play-controls">
+        <button id="play">Play</button>
+        <button id="stop" disabled>Stop</button>
+        <span id="status" class="status">Idle</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
