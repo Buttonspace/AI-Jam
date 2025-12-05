@@ -4,10 +4,11 @@ MIDI pattern generator that converts natural language descriptions into drum pat
 
 ## Quick Start
 
-1. Open `web/index.html` in a WebMIDI-capable browser (Chrome recommended)
-2. Select your Bonjour/rtpMIDI output port
-3. Click "Load fixture" to load the demo pattern
-4. Click "Play" to hear the pattern on your drum machine
+1. Open Anaconda Command Line and launch `python -m http.server 8000` from `web` Directory
+2. Open `http://localhost:8000/index.html` in a WebMIDI-capable browser (Chrome recommended, Firefox also ok)
+3. Select your Bonjour/rtpMIDI output port
+4. Click "Load fixture" to load the demo pattern
+5. Click "Play" to hear the pattern on your drum machine
 
 ## Project Structure
 
